@@ -42,13 +42,13 @@
 
     <EditText
         android:id="@+id/et1"
-        android:layout_width="205dp"
-        android:layout_height="43dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Ingrese el primer valor"
         android:inputType="number"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="18dp" />
+        tools:layout_editor_absoluteY="108dp" />
 
     <Button
         android:id="@+id/bt1"

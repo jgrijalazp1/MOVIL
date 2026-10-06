@@ -1,17 +1,14 @@
 
-package com.tutorialesprogramacionya
+package com.masanz.ejercicio4
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.TextView
-import com.masanz.ejercicio4.R
 
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
