@@ -6,6 +6,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,5 +33,6 @@ class MainActivity : AppCompatActivity() {
             val num2 = et2.text.toString().toInt()
             val suma = num1 + num2
             tv1.text = "Resultado: ${suma.toString()}"
+        }
     }
 }
