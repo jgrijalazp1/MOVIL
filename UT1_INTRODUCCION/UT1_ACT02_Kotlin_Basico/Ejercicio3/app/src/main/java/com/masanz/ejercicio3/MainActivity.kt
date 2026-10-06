@@ -18,5 +18,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val et1 = findViewById<EditText>(R.id.et1)
+        val et2 = findViewById<EditText>(R.id.et2)
+        val tv1 = findViewById<TextView>(R.id.tv1)
+        val button = findViewById<Button>(R.id.button)
+
+        button.setOnClickListener {
+            val num1 = et1.text.toString().toInt()
+            val num2 = et2.text.toString().toInt()
+            val suma = num1 + num2
+            tv1.text = "Resultado: ${suma.toString()}"
     }
 }
