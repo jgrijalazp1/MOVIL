@@ -28,7 +28,7 @@ android {
     }
 
     buildFeatures {
-        buildConfig = true // ◄ ASEGÚRATE DE QUE ESTO ESTÉ EN TRUE
+        buildConfig = true
     }
 
     compileOptions {
