@@ -1,19 +1,25 @@
 package com.masanz.act_31_webview_2
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-
+import android.content.Intent
 class ActMuestraNombre : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_act_muestra_nombre)
 
-        var tvNombre = findViewById<TextView>(R.id.botonAdelante)
+
+
+        var tvNombre = findViewById<TextView>(R.id.tvNombre)
+        var btVolver = findViewById<Button>(R.id.btVolver)
+
+        tvNombre.setText(intent.getStringExtra("nombre"))
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
