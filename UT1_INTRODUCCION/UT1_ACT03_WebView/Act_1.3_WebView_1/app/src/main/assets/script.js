@@ -1,17 +1,16 @@
 function addTask(){
-    const taskInput = document.getElementByld("taskinput");
+    const taskInput = document.getElementById("taskInput");
     const taskText = taskInput.value.trim();
     if (taskText === "") {
         alert("Por favor, escribe una tarea.");
-    }
-    return;
+        return;
     }
 
     const li = document.createElement("li");
     li.textContent = taskText;
     li.addEventListener("click", function(){
         li.classList.toggle("completed");
-    };
+    });
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent="X";
@@ -26,6 +25,6 @@ function addTask(){
     };
 
     li.appendChild(deleteBtn);
-    document.getElementByld("taskList").appendChild(u);
-    taskInput.value="":
+    document.getElementById("taskList").appendChild(li);
+    taskInput.value="";
 }

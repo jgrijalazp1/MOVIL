@@ -22,9 +22,15 @@ android {
         release {
             optimization {
                 enable = false
+
             }
         }
     }
+
+    buildFeatures {
+        buildConfig = true // ◄ ASEGÚRATE DE QUE ESTO ESTÉ EN TRUE
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11

@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+// import android.os.Build
+// import com.masanz.act_13_webview_1.BuildConfig
+
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +20,11 @@ class MainActivity : AppCompatActivity() {
         val webView1 = findViewById<WebView>(R.id.myWebView)
         var ws = webView1.getSettings()
         ws.javaScriptEnabled =  true
-        webView1.loadUrl("file///android_asset/index.html")
+        webView1.loadUrl("file:///android_asset/index.html")
 
+        if (BuildConfig.DEBUG) {
+            WebView.setWebContentsDebuggingEnabled(true)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
