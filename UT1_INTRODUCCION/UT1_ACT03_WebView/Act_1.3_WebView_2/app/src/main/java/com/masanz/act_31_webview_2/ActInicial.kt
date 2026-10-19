@@ -19,9 +19,13 @@ class ActInicial : AppCompatActivity() {
         var btAdelante = findViewById<Button>(R.id.botonAdelante)
         var btTareas = findViewById<Button>(R.id.botonTareas)
 
-        val intent = Intent(this, ActMuestraNombre::class.java)
-        intent.putExtra("Nombre", etNombre.text)
-        btAdelante.setOnClickListener{startActivity(intent)}
+        // 'intent' es el intermediario cuando una actividad llama a otra. Los parametros
+        // 'extra' que se le añaden
+        val intentMuestraNombre = Intent(this, ActMuestraNombre::class.java)
+        intentMuestraNombre.putExtra("Nombre", etNombre.text)
+        btAdelante.setOnClickListener{startActivity(intentMuestraNombre)}
+
+        val intentListaTareas = Intent(this, ActListaTareas::class.java)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
