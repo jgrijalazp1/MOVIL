@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-// import android.os.Build
-// import com.masanz.act_13_webview_1.BuildConfig
+ import android.os.Build
+import com.masanz.act_13_webview_1.BuildConfig
 
 class MainActivity : AppCompatActivity() {
 

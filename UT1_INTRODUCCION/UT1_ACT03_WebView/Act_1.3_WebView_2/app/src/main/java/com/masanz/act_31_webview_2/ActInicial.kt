@@ -25,7 +25,8 @@ class ActInicial : AppCompatActivity() {
         intentMuestraNombre.putExtra("Nombre", etNombre.text)
         btAdelante.setOnClickListener{startActivity(intentMuestraNombre)}
 
-        val intentListaTareas = Intent(this, ActListaTareas::class.java)
+        val intentListaTareas = Intent(this, ActListaDeTareas::class.java)
+        btTareas.setOnClickListener { startActivity(intentListaTareas) }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
