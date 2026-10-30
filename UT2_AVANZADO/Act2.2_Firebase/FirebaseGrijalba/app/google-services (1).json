@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "981235728462",
+    "project_id": "actividad2-2-firebase1",
+    "storage_bucket": "actividad2-2-firebase1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981235728462:android:f264db18baf2dd6375431f",
+        "android_client_info": {
+          "package_name": "com.masanz.firebasegrijalba"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr6r55tqHBX2Gv6sXDEH1C3fztc1oiUpk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
